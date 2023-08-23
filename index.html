@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-4">
+        Functional <span class="text-red-500 font-medium">Baap Er Bank</span>!!!
+      </h1>
+    </header>
+
+    <main>
+      <!-- balance and transaction summary -->
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+          <div class="bg-yellow-400 p-8 text-white rounded-lg">
+            <h4 class="text-3xl">Deposit</h4>
+            <h2 class="text-4xl font-medium">
+              $<span id="deposit-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-red-400 p-8 text-white rounded-lg">
+            <h4 class="text-3xl">Withdraw</h4>
+            <h2 class="text-4xl font-medium">
+              $<span id="withdraw-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-blue-400 p-8 text-white rounded-lg">
+            <h4 class="text-3xl">Balance</h4>
+            <h2 class="text-4xl font-medium">
+              $<span id="balanace-total">1240</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- deposit and withdraw -->
+      <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-violet-400 p-8 rounded-lg">
+            <h3 class="text-3xl font-normal text-white mb-4">Your Deposit</h3>
+            <input
+              class="w-3/4 px-5 py-2 block"
+              type="text"
+              name=""
+              id=""
+              placeholder="$ Amount you want to deposit"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-rose-500 text-white px-5 py-2 mt-4 rounded-lg font-medium hover:bg-teal-700"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-amber-400 p-8 rounded-lg">
+            <h3 class="text-3xl font-normal text-white mb-4">Your Withdraw</h3>
+            <input
+              class="w-3/4 px-5 py-2 block"
+              type="text"
+              name=""
+              id=""
+              placeholder="$ Amount you want to withdraw"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-rose-500 text-white px-5 py-2 mt-4 rounded-lg font-medium hover:bg-teal-700"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
